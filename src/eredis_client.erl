@@ -301,7 +301,7 @@ connect(State) ->
 select_database(_Socket, undefined) ->
     ok;
 select_database(Socket, Database) ->
-    do_sync_command(Socket, ["SELECT", " ", Database, "\r\n"]).
+    ok.
 
 authenticate(_Socket, <<>>) ->
     ok;
